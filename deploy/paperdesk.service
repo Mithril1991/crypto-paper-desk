@@ -1,0 +1,14 @@
+# systemd user unit: cp deploy/paperdesk.service ~/.config/systemd/user/ && systemctl --user enable --now paperdesk
+# Adjust WorkingDirectory and the venv path to where you cloned the repo.
+[Unit]
+Description=Crypto paper-trading research agent (paper only)
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/crypto-paper-desk
+ExecStart=%h/crypto-paper-desk/.venv/bin/paperdesk run
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=default.target

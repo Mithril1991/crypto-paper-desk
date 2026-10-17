@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "dexpaprika": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dexpaprika-mcp@2.9.0"
+      ]
+    },
+    "ccxt": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/Nayshins/mcp-server-ccxt",
+        "--with",
+        "ccxt==4.5.20",
+        "--with",
+        "mcp==1.30.0",
+        "ccxt-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "symbol": "BTC",
+      "cex": {"exchange": "binance", "pair": "BTC/USDT"},
+      "dex": {"network": "ethereum", "token_address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"}
+    },
+    {
+      "symbol": "ETH",
+      "cex": {"exchange": "binance", "pair": "ETH/USDT"},
+      "dex": {"network": "ethereum", "token_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"}
+    },
+    {
+      "symbol": "SOL",
+      "cex": {"exchange": "binance", "pair": "SOL/USDT"},
+      "dex": {"network": "solana", "token_address": "So11111111111111111111111111111111111111112"}
+    },
+    {
+      "symbol": "JUP",
+      "dex": {"network": "solana", "token_address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFYBMbEgr7fTkVdL"}
+    }
+  ]
+}

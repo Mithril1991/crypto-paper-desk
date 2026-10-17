@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paperdesk"
+version = "0.1.0"
+description = "Crypto research + paper-trading agent fed only by read-only MCP market data"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+paperdesk = "paperdesk.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/paperdesk"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

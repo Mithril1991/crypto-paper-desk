@@ -1,0 +1,18 @@
+{
+  "starting_balance_usd": 10000,
+  "max_position_pct": 0.05,
+  "max_open_positions": 3,
+  "stop_loss_pct": 0.03,
+  "take_profit_pct": 0.06,
+  "min_liquidity_usd": 500000,
+  "cycle_minutes": 15,
+  "fee_bps": 10,
+  "cex_slippage_bps": 5,
+  "dex_slippage_bps": 30,
+  "dex_cache_minutes": 60,
+  "dex_pool_cache_hours": 24,
+  "volume_spike_ratio": 2.0,
+  "max_atr_pct_1h": 2.0,
+  "rsi_entry_min": 50,
+  "rsi_entry_max": 70
+}
